@@ -17,5 +17,5 @@ $ git config user.email {author email}
 
 # Make it global default system-wise
 $ git config --global user.name "{author name can have space}"
-$ git config --global user.email "{author email}"
+$ git config --global user.email {author email}
 ```
