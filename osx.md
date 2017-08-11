@@ -1,4 +1,8 @@
-# Focus Follows Mouse
+# Mac OS X
+
+Customization tips while using a Mac computer
+
+## Focus Follows Mouse
 
 > The Linux Command Line: A Complete Introduction, Chapter 1
 >
@@ -11,14 +15,12 @@
 > It is suggested in that paragraph that this will make using
 > terminal windows easier.
 
-## Toggle on OS X
-
 ```sh
 # Type the folowing into a shell and restart Terminal.app
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
+$ defaults write com.apple.Terminal FocusFollowsMouse -string YES
 
 # And to disable it:
-defaults write com.apple.Terminal FocusFollowsMouse -string NO
+$ defaults write com.apple.Terminal FocusFollowsMouse -string NO
 ```
 
 Open multiple terminal windows. You can type into one as soon as
