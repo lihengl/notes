@@ -23,3 +23,13 @@ defaults write com.apple.Terminal FocusFollowsMouse -string NO
 
 Open multiple terminal windows. You can type into one as soon as
 you move your mouse cursor over it.
+
+## Change Local Hostname
+
+```sh
+# To change it permanently
+$ sudo hostname -s {hostname}
+
+# To change it temporarily for current session:
+$ sudo hostname {hostname}
+```
