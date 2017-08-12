@@ -30,7 +30,7 @@ you move your mouse cursor over it.
 
 ```sh
 # To change it permanently
-$ sudo hostname -s {hostname}
+$ sudo scutil --set HostName {hostname}
 
 # To change it temporarily for current session:
 $ sudo hostname {hostname}
