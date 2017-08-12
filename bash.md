@@ -26,3 +26,18 @@ $ chgrp -R {username} {targetpath}
 ```sh
 $ zless {filename}.gz
 ```
+
+## Flushing SSH identities
+
+There is a way to do so other than rebooting the system.
+
+```sh
+# Flush all previously added SSH identities
+$ ssh-add -D
+
+# List all current identities
+$ ssh-add -l
+
+# List all including full public key text content
+$ ssh-add -L
+```
