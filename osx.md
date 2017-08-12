@@ -35,3 +35,14 @@ $ sudo scutil --set HostName {hostname}
 # To change it temporarily for current session:
 $ sudo hostname {hostname}
 ```
+
+## Unmount USB Thumbdrive
+
+```sh
+# Find the IDENTIFIER string for the thumbdrive first.
+# Usually it looks something like /dev/disk2s1
+$ diskutil list
+
+# Use the finding above to unmount it
+$ diskutil unmount {identifier}
+```
