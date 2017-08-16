@@ -46,3 +46,12 @@ $ diskutil list
 # Use the finding above to unmount it
 $ diskutil unmount {identifier}
 ```
+
+## Copy from Terminal to Clipboard
+
+Pipe to `pbcopy` command to get it ready for Ctrl+V
+
+```sh
+# Copy entire file content. Works with other commands that print to STDOUT, too
+$ cat {somefile} | pbcopy
+```
