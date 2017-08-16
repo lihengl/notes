@@ -41,3 +41,15 @@ $ ssh-add -l
 # List all including full public key text content
 $ ssh-add -L
 ```
+
+## Grep for Multiple Words
+
+Searching for lines that have both foo and bar.
+
+```sh
+# When we know foo will always precedent bar
+$ grep 'foo.*bar'
+
+# When the order can be arbitrary
+$ grep 'foo.*bar\|bar.*foo'
+```
