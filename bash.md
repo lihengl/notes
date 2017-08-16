@@ -53,3 +53,15 @@ $ grep 'foo.*bar'
 # When the order can be arbitrary
 $ grep 'foo.*bar\|bar.*foo'
 ```
+
+## List Large Files
+
+When trying to figure out what is eating up disk space
+
+```sh
+# List files larger than 1G
+find {directory} -size +1G -ls
+
+# List files larger than 1G but smaller than 2G
+find {directory} -size +1G -size -2G -ls
+```
