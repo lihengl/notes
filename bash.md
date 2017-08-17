@@ -73,3 +73,9 @@ This will download remote file and save it with the same name in current directo
 ```sh
 $ curl -O {absolute URL of the target file}
 ```
+
+## Unpack .tar.gz Files
+
+```sh
+$ tar -xvf {targetfile.tar.gz}
+```
