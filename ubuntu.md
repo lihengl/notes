@@ -36,3 +36,16 @@ $ sudo vim /etc/sudoers
 # Add the following line at the end of the file
 {username} ALL=(ALL) NOPASSWD: ALL
 ```
+
+## Delete User
+
+```sh
+# Only delete the user (less useful)
+$ deluser {username}
+
+# Delete the user along with home directory (more common)
+$ deluser --remove-home {username}
+
+# If previously added the user to sudo group, remove it
+$ sudo vim /etc/sudoers
+```
