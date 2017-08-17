@@ -65,3 +65,11 @@ find {directory} -size +1G -ls
 # List files larger than 1G but smaller than 2G
 find {directory} -size +1G -size -2G -ls
 ```
+
+## Download File
+
+This will download remote file and save it with the same name in current directory.
+
+```sh
+$ curl -O {absolute URL of the target file}
+```
