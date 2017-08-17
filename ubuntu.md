@@ -1,8 +1,12 @@
-# Add New User to Ubuntu
+# Ubuntu 14.04 LTS
+
+Useful commands when working on Ubuntu.
+
+## Add New User to Ubuntu
 
 When adding and granting user SSH access to an Ubuntu system.
 
-## Create the User
+### Create the User
 
 ```sh
 # This will then prompt for password and other profile data,
@@ -10,7 +14,7 @@ When adding and granting user SSH access to an Ubuntu system.
 $ adduser {username}
 ```
 
-## Create SSH Authorization
+### Create SSH Authorization
 
 ```sh
 $ sudo mkdir /home/{username}/.ssh
@@ -25,7 +29,7 @@ $ sudo chmod 600 /home/{username}/.ssh/authorized_keys
 
 Then put the public key text content into `authorized_keys`
 
-## Give sudo Permission
+### Give sudo Permission
 
 ```sh
 $ sudo vim /etc/sudoers
