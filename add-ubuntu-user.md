@@ -13,15 +13,14 @@ $ adduser {username}
 ## Create SSH Authorization
 
 ```sh
-mkdir /home/{username}/.ssh
-$ vim /home/{username}/.ssh/authorized_key
-# Put the public text content into the file
+$ sudo mkdir /home/{username}/.ssh
+$ sudo vim /home/{username}/.ssh/authorized_keys
 
-$ chown -R {username} /home/{username}/.ssh
-$ chgrp -R {username} /home/{username}/.ssh
+$ sudo chown -R {username} /home/{username}/.ssh
+$ sudo chgrp -R {username} /home/{username}/.ssh
 
-$ chmod 700 /home/{username}/.ssh
-$ chmod 600 /home/{username}/.ssh/authorized_keys
+$ sudo chmod 700 /home/{username}/.ssh
+$ sudo chmod 600 /home/{username}/.ssh/authorized_keys
 ```
 
 Then put the public key text content into `authorized_keys`
