@@ -49,3 +49,9 @@ $ deluser --remove-home {username}
 # If previously added the user to sudo group, remove it
 $ sudo vim /etc/sudoers
 ```
+
+## Add Existing User to Existing Group
+
+```sh
+$ sudo usermod -a -G {groupname} {username}
+```
