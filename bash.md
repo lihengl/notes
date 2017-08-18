@@ -54,16 +54,22 @@ $ grep 'foo.*bar'
 $ grep 'foo.*bar\|bar.*foo'
 ```
 
-## List Large Files
+## Checking Disk Usage
 
-When trying to figure out what is eating up disk space
+When trying to figure out what is eating up disk space.
 
 ```sh
 # List files larger than 1G
-find {directory} -size +1G -ls
+$ find {directory} -size +1G -ls
 
 # List files larger than 1G but smaller than 2G
-find {directory} -size +1G -size -2G -ls
+$ find {directory} -size +1G -size -2G -ls
+
+# Get overall system disk usage
+$ df -h
+
+# Get the size of current directory
+$ du -hs
 ```
 
 ## Download File
