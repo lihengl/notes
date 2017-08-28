@@ -19,3 +19,14 @@ $ git config user.email {author email}
 $ git config --global user.name "{author name can have space}"
 $ git config --global user.email {author email}
 ```
+
+## Sync Remote Branch
+
+After you made local commits, and realize there are changes pushed
+to remote earlier. You'd want to have them aligned with your local
+without creating additional merge commit.
+
+```sh
+git fetch
+git pull --rebase
+```
